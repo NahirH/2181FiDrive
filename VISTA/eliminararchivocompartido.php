@@ -35,7 +35,7 @@
 
                 <div class="col-sm-9">
                     <div class="col-sm-6 mx-auto">
-                    <form id="formularionumero" name="formularionumero" method="GET" action="#" class="needs-validation" novalidate>
+                    <form id="formularionumero" name="formularionumero" method="POST" enctype="multipart/form-data" action="#" class="needs-validation" novalidate>
                     <div>    
                         <label for="nombre">Nombre del archivo: 1234.png</label>
                         
@@ -56,8 +56,8 @@
 
                         <div>    
                         <label for="user">Seleccione usuario:</label>
-                            <select name="user" class="form-control" required>
-                                <option id="selecc" selected disabled>Seleccione</option>
+                        <select name="user" class="custom-select" required>
+                                <option selected disabled value="">Seleccione...</option>
                                 <option id="adm">Admin</option>
                                 <option id="visit">Visitante</option>
                                 <option id="usted">Usted</option>

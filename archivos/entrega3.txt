@@ -1,0 +1,44 @@
+En el proyecto NroLegajoFiDrive,  agregar los siguientes controles.
+
+controles para amarchivo.php
+	Nombre del Archivo no debe quedar vacío.
+	La descripción del Archivo, es contenido enriquecido, buscar un editor para cargarlo
+	Agregar siempre la siguiente descripción por defecto:  Esta es una descripción genérica, si lo necesita la puede cambiar.
+	El usuario debe ser Seleccionado
+	El icono, debería ser sugerido teniendo en cuenta la extensión del archivo seleccionado. Todo esto usado JavaScript.
+	Si el campo Clave, es igual a cero, al submitir el formulario, se debe enviar el parámetro accion = Alta, caso contrario debe enviar en el parámetro accion = Modificar
+
+
+controles para  compartirarchivo.php
+	El usuario debe ser Seleccionado
+	Si se selecciona proteger con contraseña, se debe ingresar una contraseña. Se debe mostrar si la contraseña es débil (si son solo números o letras y longitud es menor a 6) o normal ( si contiene números y letras  y una longitud mayor a 6) o fuerte ( si tiene números, letras y símbolos y una longitud mayor a 6)
+	El link de descargas debe ser generado con un hash que contenga internamente un numero, la cantidad de descargas y la cantidad de  días. Si estos alguno de estos 2 últimos campos son vacíos  usar el valor  9007199254740991
+
+ 
+
+controles para  eliminararchivo.php 
+
+	El usuario debe ser Seleccionado
+	El motivo no debe quedar vació
+	Implementar la funcionalidad de subir el archivo al servidor. 
+
+ 
+
+Crear dentro del proyecto, en la carpeta raíz, una carpeta llamada archivos
+
+Crear un archivo, en la carpeta vista,  llamado contenido.php que muestre recursivamente los archivos contenidos en la carpeta llamada archivo. Este archivo debe incluir los archivos: cabecera.php, pie.php y menu.php
+
+Agregar al archivo  contenido.php un botón, que permita generar una nueva carpeta dentro de la carpeta que actualmente este seleccionada. 
+
+Agregar al archivo  contenido.php un botón, que permita cargar un archivo dentro de la carpeta actualmente este seleccionada. Este botón, debe llamar al formulario amarchivo.php creado en la Entrega 1.
+ 
+Agregar al archivo  contenido.php un botón, que permita compartir un archivo actualmente este seleccionado. Este botón, debe llamar al formulario compartirarchivo.php creado en la Entrega 1. 
+
+Agregar al archivo  contenido.php un botón, que permita eliminar un archivo actualmente este seleccionado. Este botón, debe llamar al formulario eliminararchivo.php creado en la Entrega 1. 
+
+Crear un archivo, en la carpeta vista,  llamado compartidos.php que muestre recursivamente los archivos contenidos en la carpeta llamada archivo y que estén compartidos. Este archivo debe incluir los archivos: cabecera.php, pie.php y menu.php.
+
+Agregar al archivo  compartidos.php un botón, que permita dejar de compartir un archivo actualmente compartido. Este botón, debe llamar al formulario eliminararchivocompartido.php creado en la Entrega 1. 
+Compartir el proyecto con los profes, usando gitHub. 
+
+Para la entrega, subir en un archivo el Id del commit en GitHub de la version que entregan.
